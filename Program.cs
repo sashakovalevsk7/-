@@ -62,11 +62,10 @@ Console.WriteLine ($"{number} является не четным");
 // 8 -> 2, 4, 6, 8
 Console.WriteLine("вводим число ");
 int a = int.Parse(Console.ReadLine()!);
-int m1 = 1;
 
-while(m1 <= a){
+for(int m1 = 1; m1 <= a; m1++)
+if (m1 % 2 == 0){
     Console.Write($"{m1} ");
-    m1++;
 }
 
 
